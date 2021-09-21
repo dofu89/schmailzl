@@ -1,0 +1,110 @@
+.jobs {
+  display: flex;
+  justify-content: center;
+  .jobs-container {
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    align-items: center;
+    padding: 40px 0;
+    h1 {
+      font-size: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      padding: 40px 0;
+      width: 70%;
+      button {
+        margin: 10px;
+        height: 40px;
+        font-size: 1.2rem;
+        color: $mainColor;
+        background: white;
+        border-radius: 0.25rem;
+        border: 1px solid rgb(95, 152, 205);
+        &:active {
+          border: 3px solid rgb(95, 152, 205);
+          outline: none;
+        }
+      }
+      input {
+        height: 40px;
+        width: 500px;
+        font-size: 1.2rem;
+        border-radius: 0.25rem;
+        border: 1px solid rgb(95, 152, 205);
+        &:focus {
+          border: 3px solid rgb(95, 152, 205);
+          outline: none;
+        }
+        color: $mainColor;
+      }
+      select {
+        height: 30px;
+        width: 200px;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid rgb(95, 152, 205);
+        &:focus {
+          border: 3px solid rgb(95, 152, 205);
+          outline: none;
+        }
+        background: white;
+        color: $mainColor;
+      }
+      label {
+        color: $mainColor;
+      }
+      .top {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        .need {
+          display: flex;
+          flex-direction: column;
+          width: 400px;
+          justify-content: space-between;
+
+          div {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+          }
+        }
+        .name {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .mitte {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .bottom {
+        padding: 10px;
+        div {
+          display: flex;
+          flex-direction: column;
+          textarea {
+            height: 40vh;
+            font-size: 1.2rem;
+            border-radius: 0.25rem;
+            border: 1px solid rgb(95, 152, 205);
+            &:focus {
+              border: 3px solid rgb(95, 152, 205);
+              outline: none;
+            }
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}

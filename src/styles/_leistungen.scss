@@ -1,0 +1,35 @@
+.leistungen {
+  display: flex;
+  justify-content: center;
+  .leistungen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1500px;
+    padding: 40px 0;
+    h1,
+    h2 {
+      padding: 0 0 10px 0;
+    }
+  }
+  .leistungen-grid {
+    display: grid;
+    width: 100%;
+    padding: 10px 100px;
+    div {
+      //height: 20vh;
+      text-align: center;
+      //background: red;
+      padding: 0 30px;
+    }
+    .leistungen-7 {
+      grid-area: full;
+    }
+    grid-template-areas:
+      'div div'
+      'div div'
+      'div div'
+      'full full';
+    gap: 30px 20px;
+  }
+}

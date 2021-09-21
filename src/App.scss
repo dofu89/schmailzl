@@ -1,0 +1,60 @@
+@import './styles/config';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //scroll-behavior: smooth;
+  body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+    @include mobile;
+    @include tablet;
+    @include desktop;
+  }
+  hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    width: 100%;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: rgba(64, 64, 64, 1);
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    &:visited {
+      color: inherit;
+    }
+  }
+  h1,
+  h2,
+  p {
+    color: #28235d;
+    line-height: 28px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap');
+
+@import './styles/navbar';
+@import './styles/hero';
+@import './styles/home';
+@import './styles/leistungen';
+@import './styles/jobs';
+@import './styles/contact';
+
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
