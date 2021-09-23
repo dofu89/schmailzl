@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Jobs = () => {
+  useEffect(() => {
+    aos.init({
+      duration: 2000,
+    })
+  }, [])
+
   const handleSubmmit = (e) => {
     e.preventDefault()
     console.log('clicked')
   }
   return (
     <div className='jobs'>
-      <div className='jobs-container'>
+      <div data-aos='fade-in' className='jobs-container'>
         <h1>Kontakt /Jobs</h1>
         <form>
           <div className='top'>

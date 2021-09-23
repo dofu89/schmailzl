@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Leistungen = () => {
+  useEffect(() => {
+    aos.init({
+      duration: 2000,
+    })
+  }, [])
+
   return (
     <div className='leistungen'>
       <div className='leistungen-container'>
-        <h1>Unsere Leistungen</h1>
-        <h2>Professionelle, hochwertige Pflege zu Hause</h2>
+        <h1 data-aos='fade-in'>Unsere Leistungen</h1>
+        <h2 data-aos='fade-in'>Professionelle, hochwertige Pflege zu Hause</h2>
         <div className='leistungen-grid'>
-          <div className='leistungen-1'>
+          <div data-aos='fade-in' className='leistungen-1'>
             <hr />
             <h1>Sachleistungen</h1>
             <hr />
@@ -19,7 +27,7 @@ const Leistungen = () => {
               wessen Höhe sich an Ihrem jeweiligen Pflegegrad richtet.{' '}
             </p>
           </div>
-          <div className='leistungen-2'>
+          <div data-aos='fade-in' className='leistungen-2'>
             <hr />
             <h1>Kurzzeitpflege</h1>
             <hr />
@@ -32,7 +40,7 @@ const Leistungen = () => {
               bis zu 3.224€ für bis zu 56 Tage.
             </p>
           </div>
-          <div className='leistungen-3'>
+          <div data-aos='fade-in' className='leistungen-3'>
             <hr />
             <h1>Tages- und Nachtpflege</h1>
             <hr />
@@ -41,7 +49,7 @@ const Leistungen = () => {
               ab Pflegegrad 2 Leistungen je nach Pflegegrad bieten.
             </p>
           </div>
-          <div className='leistungen-4'>
+          <div data-aos='fade-in' className='leistungen-4'>
             <hr />
             <h1>Verhinderungspflege</h1>
             <hr />
@@ -55,7 +63,7 @@ const Leistungen = () => {
               2.412€ für bis zu 42 Tage im Jahr.
             </p>
           </div>
-          <div className='leistungen-5'>
+          <div data-aos='fade-in' className='leistungen-5'>
             <hr />
             <h1>Kurzzeitpflege</h1>
             <hr />
@@ -68,7 +76,7 @@ const Leistungen = () => {
               bis zu 3.224€ für bis zu 56 Tage.
             </p>
           </div>
-          <div className='leistungen-6'>
+          <div data-aos='fade-in' className='leistungen-6'>
             <hr />
             <h1>Wundversorgung / Wundmanagement</h1>
             <hr />
@@ -81,7 +89,7 @@ const Leistungen = () => {
               unterstützen.
             </p>
           </div>
-          <div className='leistungen-7'>
+          <div data-aos='fade-in' className='leistungen-7'>
             <hr />
             <h1>Zusätzliche Betreuungs-/Entlastungsleistungen</h1>
             <hr />

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Ambulante = () => {
   return (
-    <div>
+    <div style={{ height: 400 }}>
       <h1>Ambulante</h1>
     </div>
   )

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import logoHome from '../imgs/logo-home.png'
 import { BsJustify } from 'react-icons/bs'
@@ -11,13 +11,27 @@ const Navbar = () => {
     window.scrollY >= 1 ? setNavbar('navbar-scrolling') : setNavbar('navbar')
   }
 
+  window.addEventListener('scroll', handleWheel)
   const handleHamMenu = () => setMenu(!menu)
 
-  window.addEventListener('scroll', handleWheel)
-  const top = () => window.scrollTo(0, 0)
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  const top = () => window.scrollTo(0, 0)
+
+  const menuRef = useRef()
+  useEffect(() => {
+    let handler = (event) => {
+      if (!menuRef.current.contains(event.target)) {
+        setMenu(true)
+      }
+    }
+    document.addEventListener('mousedown', handler)
+
+    return () => {
+      document.removeEventListener('mousedown', handler)
+    }
+  })
 
   return (
     <div id='top' className={navbar}>
@@ -30,24 +44,24 @@ const Navbar = () => {
             <img src={logoHome} alt='schmailzl.de' />
           </Link>
         </div>
-        <div className={menu ? 'menu' : 'hamb-menu'}>
+        <div ref={menuRef} className={menu ? 'menu' : 'hamb-menu'}>
           <ul>
-            <li id='home-button'>
+            <li onClick={handleHamMenu} id='home-button'>
               <Link onClick={top} to='/'>
                 Home
               </Link>
             </li>
-            <li>
+            <li onClick={handleHamMenu}>
               <Link onClick={top} to='/leistungen'>
                 Unsere Leistungen
               </Link>
             </li>
-            <li>
+            <li onClick={handleHamMenu}>
               <Link onClick={top} to='/ambulantepflege'>
                 Ambulante Pflege?
               </Link>
             </li>
-            <li>
+            <li onClick={handleHamMenu}>
               <Link onClick={top} to='/jobs'>
                 Kontakt/Jobs
               </Link>

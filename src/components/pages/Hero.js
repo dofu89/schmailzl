@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from '../../imgs/schmailzl-logo.png'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Hero = () => {
+  useEffect(() => {
+    aos.init({
+      duration: 2000,
+    })
+  }, [])
+
   return (
     <div className='hero-container'>
-      <h1>Ihr ambulanter Pflegedienst Andrea Schmailzl</h1>
-      <div className='hero'>
+      <h1 data-aos='fade-in'>Ihr ambulanter Pflegedienst Andrea Schmailzl</h1>
+      <div data-aos='fade-in' className='hero'>
         <img src={logo} alt='logo' />
       </div>
       <div class='custom-shape-divider-bottom-1632228016'>

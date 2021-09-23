@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logoContact from '../imgs/logo.png'
 import Maps from './pages/Maps'
 //import Mailto from 'react-mailto'
@@ -6,8 +6,16 @@ import Maps from './pages/Maps'
 import { FaHome, FaPhone } from 'react-icons/fa/'
 import { MdMailOutline } from 'react-icons/md'
 import MDK from '../imgs/mdk-bewertung-white.png'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Contact = () => {
+  useEffect(() => {
+    aos.init({
+      duration: 2000,
+    })
+  }, [])
+
   const Mailto = ({ email, subject = '', body = '', children }) => {
     let params = subject || body ? '?' : ''
     if (subject) params += `subject=${encodeURIComponent(subject)}`
@@ -17,7 +25,7 @@ const Contact = () => {
   }
   return (
     <div className='contact'>
-      <div className='contact-container'>
+      <div data-aos='fade-in' className='contact-container'>
         <div className='contact-logo'>
           <img src={logoContact} alt='contact-img' />
           <img id='mdk' src={MDK} alt='mdk' />
