@@ -15,10 +15,15 @@ $mainColor: rgb(40, 35, 93);
           display: none;
         }
         .menu {
-          //opacity: ;
-          display: none;
+          all: initial;
+          * {
+            all: unset;
+          }
+          opacity: 0;
+          //display: none;
         }
         .hamb-menu {
+          transition: all 1s;
           opacity: 1;
           position: fixed;
           display: flex;
@@ -67,7 +72,7 @@ $mainColor: rgb(40, 35, 93);
           opacity: 0;
         }
         .hamb-menu {
-          opacity: 1;
+          transition: all 1s;
           position: fixed;
           display: flex;
           width: 100%;
@@ -243,10 +248,11 @@ $mainColor: rgb(40, 35, 93);
           display: none;
         }
         .menu {
-          //opacity: ;
-          display: none;
+          opacity: 0;
+          //display: none;
         }
         .hamb-menu {
+          transition: all 1s;
           opacity: 1;
           position: fixed;
           justify-content: center;
@@ -296,12 +302,13 @@ $mainColor: rgb(40, 35, 93);
           opacity: 0;
         }
         .hamb-menu {
+          transition: all 1s;
           opacity: 1;
           position: fixed;
           width: 100%;
           height: 200px;
           z-index: 105;
-          background: #28235d;
+          background: rgb(40, 35, 93);
           top: 0;
           left: 0;
           ul {

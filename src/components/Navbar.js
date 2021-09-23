@@ -2,10 +2,18 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import logoHome from '../imgs/logo-home.png'
 import { BsJustify } from 'react-icons/bs'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState('navbar')
   const [menu, setMenu] = useState(true)
+
+  useEffect(() => {
+    aos.init({
+      duration: 2000,
+    })
+  }, [])
 
   const handleWheel = () => {
     window.scrollY >= 1 ? setNavbar('navbar-scrolling') : setNavbar('navbar')
