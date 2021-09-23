@@ -1,13 +1,16 @@
 .contact {
   display: flex;
   justify-content: center;
-  height: 40vh;
-
+  height: 300px;
+  position: absolute;
+  width: 100%;
   .contact-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 1500px;
+    position: relative;
+    padding: 25px 0;
     .contact-logo {
       height: 250px;
       //width: 400px;

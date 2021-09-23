@@ -19,6 +19,7 @@ const Leistungen = () => {
             <hr />
             <h1>Sachleistungen</h1>
             <hr />
+
             <p>
               Wenn sich Pflegebedürftige durch einen ambulanten Pflegedienst,
               also uns, pflegen und betreuen lassen können sie

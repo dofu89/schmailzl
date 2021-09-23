@@ -16,6 +16,7 @@
     @include mobile;
     @include tablet;
     @include desktop;
+    position: relative;
   }
   hr {
     display: block;
