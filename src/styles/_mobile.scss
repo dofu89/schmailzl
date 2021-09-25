@@ -129,12 +129,13 @@
         display: none;
       }
       .home {
-        height: 100px;
-        padding: 20px 0;
         .home-grid {
-          height: 900px;
+          //height: 900px;
           width: 100%;
-          padding: 20px 0;
+          padding: 0px 0;
+          h1 {
+            padding: 10px 0;
+          }
           div {
             display: flex;
             flex-direction: column;
