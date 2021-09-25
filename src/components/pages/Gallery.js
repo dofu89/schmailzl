@@ -40,17 +40,19 @@ const images = [
 
 const Gallery = () => {
   return (
-    <ImageGallery
-      items={images}
-      infinite={true}
-      showNav={false}
-      showFullscreenButton={false}
-      showPlayButton={false}
-      autoPlay={true}
-      slideDuration={4000}
-      slideInterval={8000}
-      sizes={{ height: 300, width: 300 }}
-    />
+    <div className='gallery'>
+      <ImageGallery
+        items={images}
+        infinite={true}
+        showNav={false}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        autoPlay={true}
+        slideDuration={4000}
+        slideInterval={8000}
+        sizes={{ height: 300, width: 300 }}
+      />
+    </div>
   )
 }
 

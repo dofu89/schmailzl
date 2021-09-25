@@ -37,7 +37,7 @@ const Contact = () => {
               <div className='icon'>
                 <FaHome size={20} style={{ color: '#28235d' }} />
               </div>
-              <div>
+              <div className='selectable'>
                 <p>Ambulante Krankenpflege Andrea Schmailzl</p>
                 <p>Münchner Straße 17 </p>
                 <p>85540 Haar</p>
