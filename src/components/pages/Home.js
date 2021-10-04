@@ -22,12 +22,12 @@ const Home = () => {
           <br /> ...wir denken: das Ausgleichen durch modernste Pflegetechniken
           ermöglicht es auch "Kranken", "gesund" zu leben.
         </p>
+        <hr className='hr' />
         <div className='gallery'>
           <Gallery />
         </div>
         <hr />
         <h1 data-aos='fade-in'>Entdecken Sie unsere Stärken</h1>
-
         <section className='home-grid'>
           <div
             style={{ background: 'rgba(76, 128, 185,1)' }}
@@ -68,7 +68,6 @@ const Home = () => {
             </p>
           </div>
         </section>
-        <hr className='hr' />
       </div>
     </div>
   )

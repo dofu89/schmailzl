@@ -31,7 +31,7 @@ const Contact = () => {
           <img id='mdk' src={MDK} alt='mdk' />
         </div>
         <div className='contact-main'>
-          <h2>SO ERREICHEN SIE UNS</h2>
+          <h3>SO ERREICHEN SIE UNS</h3>
           <div className='main-info'>
             <div className='single-info'>
               <div className='icon'>
@@ -39,8 +39,10 @@ const Contact = () => {
               </div>
               <div className='selectable'>
                 <p>Ambulante Krankenpflege Andrea Schmailzl</p>
-                <p>Münchner Straße 17 </p>
-                <p>85540 Haar</p>
+                <p id='adress'>
+                  Münchner Straße 17 <br />
+                  85540 Haar
+                </p>
               </div>
             </div>
             <div className='single-info'>

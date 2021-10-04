@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ImageGallery from 'react-image-gallery'
+
+import aos from 'aos'
+import 'aos/dist/aos.css'
 
 import img1 from '../../imgs/img1.jpg'
 //import img2 from '../../imgs/img2.jpg'
@@ -39,8 +42,13 @@ const images = [
 ]
 
 const Gallery = () => {
+  useEffect(() => {
+    aos.init({
+      duration: 2000,
+    })
+  }, [])
   return (
-    <div className='gallery'>
+    <div data-aos='fade-in' className='gallery-container'>
       <ImageGallery
         items={images}
         infinite={true}
@@ -50,7 +58,6 @@ const Gallery = () => {
         autoPlay={true}
         slideDuration={4000}
         slideInterval={8000}
-        sizes={{ height: 300, width: 300 }}
       />
     </div>
   )

@@ -8,6 +8,7 @@ import Leistungen from './components/pages/Leistungen'
 import Ambulante from './components/pages/Ambulante'
 import Jobs from './components/pages/Jobs'
 import Contact from './components/Contact'
+import Gallery from './components/pages/Gallery'
 
 const Routes = () => {
   return (
