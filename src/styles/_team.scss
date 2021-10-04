@@ -16,6 +16,10 @@
   .rec-dot_active {
     background: $mainColor;
     box-shadow: 0 0 1px 3px rgb(76, 128, 185);
+    &:focus {
+      box-shadow: 0 0 1px 3px rgb(76, 128, 185);
+      //box-shadow: 0 0 1px 3px $mainColor;
+    }
   }
 }
 .member {

@@ -3,6 +3,9 @@ import Member from '../../data/Member'
 import { team } from '../../data/team'
 import Carousel from 'react-elastic-carousel'
 
+import aos from 'aos'
+import 'aos/dist/aos.css'
+
 const teamData = team.map((member) => (
   <Member
     key={member.id}
@@ -23,7 +26,7 @@ const breakPoints = [
 
 const Team = () => {
   return (
-    <div className='team'>
+    <div className='team' data-aos='fade-in'>
       <h1>Unsere Team</h1>
       <div className='team-container'>
         <Carousel
