@@ -13,27 +13,37 @@
     //grid-template-columns: repeat(3, 1fr);
     //gap: 20px;
   }
+  .rec-dot_active {
+    background: $mainColor;
+    box-shadow: 0 0 1px 3px rgb(76, 128, 185);
+  }
 }
 .member {
+  height: 600px;
   .member-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
-    background: rgb(95, 152, 205);
-    .card-photo {
-      width: 350px;
-      height: 380px;
+    //background: rgb(95, 152, 205);
+    border-radius: 10px;
+    .member-photo {
+      display: flex;
+      width: 100%;
+      height: 280px;
+      //justify-content: center;
+      //padding: 0 10px;
       img {
-        width: 100%;
-        height: 380px;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
       }
     }
-    .card-details {
+    .member-details {
       display: flex;
       width: 350px;
       height: 300px;
-      padding: 20px;
+      padding: 10px;
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;

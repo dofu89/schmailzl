@@ -16,8 +16,8 @@ const teamData = team.map((member) => (
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 2 },
+  { width: 480, itemsToShow: 2 },
+  { width: 767, itemsToShow: 2 },
   { width: 1200, itemsToShow: 3 },
 ]
 
@@ -26,7 +26,12 @@ const Team = () => {
     <div className='team'>
       <h1>Unsere Team</h1>
       <div className='team-container'>
-        <Carousel breakPoints={breakPoints} disableArrowsOnEnd={false}>
+        <Carousel
+          breakPoints={breakPoints}
+          showArrows={false}
+          enableAutoPlay={true}
+          autoPlaySpeed={5000}
+        >
           {teamData}
         </Carousel>
       </div>

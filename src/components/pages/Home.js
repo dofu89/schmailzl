@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Gallery from '../pages/Gallery'
+import Team from './Team'
 import aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -68,6 +69,8 @@ const Home = () => {
             </p>
           </div>
         </section>
+        <hr />
+        <Team />
       </div>
     </div>
   )
