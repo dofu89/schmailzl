@@ -12,9 +12,7 @@ const Leistungen = () => {
   return (
     <div className='leistungen'>
       <div className='leistungen-container'>
-        <h1 style={{ fontSize: 40 }} data-aos='fade-in'>
-          Unsere Leistungen
-        </h1>
+        <h1 data-aos='fade-in'>Unsere Leistungen</h1>
         <h2 data-aos='fade-in'>Professionelle, hochwertige Pflege zu Hause</h2>
         <div className='leistungen-grid'>
           <div data-aos='fade-in' className='leistungen-1'>

@@ -11,7 +11,7 @@ const Ambulante = () => {
   return (
     <div className='ambulante'>
       <div data-aos='fade-in' className='ambulante-container'>
-        <h1 style={{ fontSize: 40 }}>Ambulante</h1>
+        <h1>Ambulante</h1>
         <div className='ambulante-content'>
           <div>
             <h3>Den Lebensabend zu Hause verbringen</h3>
