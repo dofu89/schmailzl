@@ -14,8 +14,10 @@ const Home = () => {
   return (
     <div className='home-container'>
       <div className='home'>
-        <h1 data-aos='fade-in'>Willkommen auf unserer Homepage</h1>
-        <p data-aos='fade-in' id='unterTitel'>
+        <h1 style={{ fontSize: 40 }} data-aos='fade-in'>
+          Willkommen auf unserer Homepage
+        </h1>
+        <p style={{ fontSize: 18 }} data-aos='fade-in' id='unterTitel'>
           Wir sind Ihr Partner wenn es darum geht, Pflege zu Hause professionell
           durchzuführen.
           <br /> Unser Konzept sind die Sinne des Menschen: Die Funktionalität

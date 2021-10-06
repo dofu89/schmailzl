@@ -58,6 +58,7 @@ const Gallery = () => {
         autoPlay={true}
         slideDuration={4000}
         slideInterval={8000}
+        lazyLoad={true}
       />
     </div>
   )

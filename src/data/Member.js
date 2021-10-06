@@ -5,7 +5,7 @@ const Member = ({ img, name, role, description, school }) => {
     <div className='member'>
       <div className='member-container'>
         <div className='member-photo'>
-          <img src={img} alt='slika' />
+          <img src={img} alt='member-photo' />
         </div>
         <div className='member-details'>
           <h3>{name}</h3>

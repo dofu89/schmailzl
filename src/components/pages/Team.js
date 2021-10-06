@@ -32,8 +32,8 @@ const Team = () => {
         <Carousel
           breakPoints={breakPoints}
           showArrows={false}
-          enableAutoPlay={true}
-          autoPlaySpeed={5000}
+          //enableAutoPlay={true}
+          //autoPlaySpeed={5000}
         >
           {teamData}
         </Carousel>

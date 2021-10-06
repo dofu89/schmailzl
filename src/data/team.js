@@ -1,4 +1,5 @@
 import andrea from '../imgs/andrea-schmailzl.jpg'
+import fuad from '../imgs/fuad.jpg'
 
 export const team = [
   {
@@ -13,8 +14,8 @@ export const team = [
   },
   {
     id: 2,
-    img: andrea,
-    name: 'Kinga',
+    img: '',
+    name: 'Wojtalik Kinga',
     role: 'Geschäftsführer',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
@@ -23,8 +24,8 @@ export const team = [
   },
   {
     id: 3,
-    img: andrea,
-    name: 'Fuad Osmanovic',
+    img: '',
+    name: 'Christine Schellnast',
     role: 'Geschäftsführer',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
@@ -33,8 +34,8 @@ export const team = [
   },
   {
     id: 4,
-    img: andrea,
-    name: 'Marion',
+    img: '',
+    name: 'Strauch Marion',
     role: 'Geschäftsführer',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
@@ -43,8 +44,28 @@ export const team = [
   },
   {
     id: 5,
-    img: andrea,
+    img: fuad,
+    name: 'Fuad Osmanovic',
+    role: 'Geschäftsführer',
+    description:
+      'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
+    school:
+      'Geschäftsführer und stv. PDL, exam. Gesundheits- und Krankenpfleger',
+  },
+  {
+    id: 6,
+    img: '',
     name: 'Benjamin Zornic',
+    role: 'Geschäftsführer',
+    description:
+      'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
+    school:
+      'Geschäftsführer und stv. PDL, exam. Gesundheits- und Krankenpfleger',
+  },
+  {
+    id: 7,
+    img: '',
+    name: 'Haris Hodzic',
     role: 'Geschäftsführer',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',

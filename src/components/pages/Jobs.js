@@ -16,7 +16,7 @@ const Jobs = () => {
   return (
     <div className='jobs'>
       <div data-aos='fade-in' className='jobs-container'>
-        <h1>Kontakt /Jobs</h1>
+        <h1 style={{ fontSize: 40 }}>Kontakt /Jobs</h1>
         <form>
           <div className='top'>
             <div className='need'>
