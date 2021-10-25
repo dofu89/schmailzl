@@ -23,8 +23,8 @@ const Jobs = () => {
               <div>
                 <label htmlFor='need'>Ich brauche</label>
                 <select id='need' name='need' required={true}>
-                  <option value='job'>Job</option>
                   <option value='pflege'>Pflege</option>
+                  <option value='job'>Job</option>
                 </select>
               </div>
               <div>

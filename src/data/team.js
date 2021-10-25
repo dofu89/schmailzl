@@ -1,10 +1,9 @@
-import andrea from '../imgs/andrea-schmailzl.jpg'
-import fuad from '../imgs/fuad.jpg'
+import profile from '../imgs/profile.jpg'
 
 export const team = [
   {
     id: 1,
-    img: andrea,
+    img: profile,
     name: 'Andrea Schmailzl',
     role: 'Geschäftsführer',
     description:
@@ -14,9 +13,9 @@ export const team = [
   },
   {
     id: 2,
-    img: '',
-    name: 'Wojtalik Kinga',
-    role: 'Geschäftsführer',
+    img: profile,
+    name: 'Vorname / Name',
+    role: 'Fachkraft',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
     school:
@@ -24,9 +23,9 @@ export const team = [
   },
   {
     id: 3,
-    img: '',
-    name: 'Christine Schellnast',
-    role: 'Geschäftsführer',
+    img: profile,
+    name: 'Vorname / Name',
+    role: 'Fachkraft',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
     school:
@@ -34,9 +33,9 @@ export const team = [
   },
   {
     id: 4,
-    img: '',
-    name: 'Strauch Marion',
-    role: 'Geschäftsführer',
+    img: profile,
+    name: 'Vorname / Name',
+    role: 'Fachkraft',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
     school:
@@ -44,19 +43,18 @@ export const team = [
   },
   {
     id: 5,
-    img: fuad,
-    name: 'Fuad Osmanovic',
-    role: 'Geschäftsführer',
+    img: profile,
+    name: 'Vorname / Name',
+    role: 'Fachkraft',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
-    school:
-      'Geschäftsführer und stv. PDL, exam. Gesundheits- und Krankenpfleger',
+    school: 'Physiotherapeut',
   },
   {
     id: 6,
-    img: '',
-    name: 'Benjamin Zornic',
-    role: 'Geschäftsführer',
+    img: profile,
+    name: 'Vorname / Name',
+    role: 'Fachkraft',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
     school:
@@ -64,9 +62,9 @@ export const team = [
   },
   {
     id: 7,
-    img: '',
-    name: 'Haris Hodzic',
-    role: 'Geschäftsführer',
+    img: profile,
+    name: 'Vorname / Name',
+    role: 'Fachkraft',
     description:
       'Change the underlying component CSS base class name and modifier class names prefix. This is an escape hatch for working with heavily customized bootstrap css',
     school:

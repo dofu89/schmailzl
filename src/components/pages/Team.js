@@ -3,9 +3,6 @@ import Member from '../../data/Member'
 import { team } from '../../data/team'
 import Carousel from 'react-elastic-carousel'
 
-import aos from 'aos'
-import 'aos/dist/aos.css'
-
 const teamData = team.map((member) => (
   <Member
     key={member.id}
