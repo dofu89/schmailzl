@@ -9,9 +9,9 @@ A simple full responsive react website
 - react-router-dom: 6
 - google-maps-react
 
-###  Test Site here:
+### [Test Site here](https://schmailzl.netlify.app/)
 
-https://schmailzl.netlify.app/
+
 
 ### Note:
 
