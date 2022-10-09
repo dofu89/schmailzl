@@ -1,4 +1,4 @@
-## React website
+# React website
 
 A simple full responsive react website
 
